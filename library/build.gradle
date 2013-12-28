@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.5.+'
+        classpath 'com.android.tools.build:gradle:0.7.+'
     }
 }
 
@@ -15,7 +15,7 @@ repositories {
 
 dependencies {
     compile files('libs/disklrucache-2.0.2.jar')
-    compile files('libs/volley.jar')
+    compile project(':glide:library:volley')
 }
 
 android {
